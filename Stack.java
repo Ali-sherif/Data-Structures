@@ -25,7 +25,7 @@ public class Stack<StackEntry> {
     }
     
     /* Pre: The stack is initialized and not full
-       Post: The element e has been stored at the top of the stack; and e does not change*/
+       Post: The element e has been stored at the top of the stack */
     public void Push(StackEntry e) {
 
         entry[top++] = e;
@@ -39,13 +39,13 @@ public class Stack<StackEntry> {
     }
     
     /* Pre: The stack is initialized and not empty
-       Post: The last element entered is returned*/
+       Post:  returned 1 or 0 */
     public int StackEmpty() {
         return (top == 0) ? 1 : 0;
     }
     
     /* Pre: The stack is initialized and not full
-       Post: The new element entered is inserted*/
+       Post: returned 1 or 0 */
     public int StackFull() {
         return (top == MAXSTACK) ? 1 : 0;
     }
@@ -57,7 +57,7 @@ public class Stack<StackEntry> {
     }
     
     /* Pre: Stack is initialized.
-       Post: returns how many elements exist.*/
+       Post: returns how many elements exist */
     public int StackSize() {
         return top;
     }
